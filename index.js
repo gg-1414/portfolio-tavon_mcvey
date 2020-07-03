@@ -3,17 +3,30 @@ document.addEventListener('DOMContentLoaded', function() {
     return document.querySelector(string)
   }
 
-  const hamburger = selector('.hamburger')
+  const selectorAll = (string) => {
+    return document.querySelectorAll(string)
+  }
+
+  const hamburgerBtn = selector('.hamburger')
+  const quickMenuBtn = selector('.quick-menu .menu-toggle-button')
   const overlay = selector('.overlay')
 
-  hamburger.addEventListener('click', function(e) {
-    hamburger.classList.toggle('is-active')
-    document.body.classList.toggle('menu--active')
+  hamburgerBtn.addEventListener('click', function(e) {
+    hamburgerBtn.classList.toggle('is-active')
+    document.body.classList.toggle('side-menu--active')
+  })
+
+  quickMenuBtn.addEventListener('click', function() {
+    document.body.classList.toggle('quick-menu--active')
   })
 
   overlay.addEventListener('click', function() {
-    hamburger.classList.toggle('is-active')
-    document.body.classList.toggle('menu--active')
+    if (selectorAll('.side-menu--active').length) {
+      hamburgerBtn.classList.toggle('is-active')
+      document.body.classList.toggle('side-menu--active')
+    } else if (selectorAll('.quick-menu--active').length) {
+      document.body.classList.toggle('quick-menu--active')
+    }
   })
 })
 
