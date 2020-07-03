@@ -64,6 +64,7 @@
     transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
 
 /***********************/
+/***********************/
 @font-face {
   font-family: Montserrat;
   src: url("../assets/fonts/Montserrat/Montserrat-Regular.ttf"); }
@@ -81,6 +82,12 @@
     .d-md-block {
       display: block; } }
 
+.d-md-flex {
+  display: none; }
+  @media (min-width: 1024px) {
+    .d-md-flex {
+      display: flex; } }
+
 @media (min-width: 1024px) {
   .d-md-none {
     display: none; } }
@@ -92,9 +99,7 @@ body {
   margin: 0; }
 
 h2 {
-  font-weight: normal; }
-
-h2 {
+  font-weight: normal;
   font-size: 1.75rem;
   margin: 0;
   line-height: 1.3; }
@@ -136,7 +141,7 @@ a {
 
 @media (min-width: 768px) {
   h2 {
-    font-size: 2rem; }
+    font-size: 2.5rem; }
 
   p {
     font-size: 1.125rem; } }
@@ -411,10 +416,82 @@ main {
   main iframe, main img {
     margin-top: 3rem; }
   main .container {
-    padding: 0 2.5rem; } }
+    padding: 0 4rem; } }
+@media (min-width: 1024px) {
+  main section:nth-child(2) .container {
+    display: flex;
+    flex-direction: row-reverse; }
+  main section:nth-child(2) .content {
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  main section:nth-child(2) h2 {
+    flex: 1;
+    display: flex;
+    padding-bottom: 5rem; }
+    main section:nth-child(2) h2 span {
+      align-self: flex-end; }
+  main section:nth-child(2) .arrow-animated {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1.3; }
+    main section:nth-child(2) .arrow-animated .arrow {
+      width: 4rem;
+      height: 4rem;
+      border: 7px solid;
+      border-color: white transparent transparent white;
+      transform: rotate(-45deg); }
+    main section:nth-child(2) .arrow-animated .arrow-sliding {
+      position: absolute;
+      -webkit-animation: slide 4s linear infinite;
+      animation: slide 4s linear infinite; }
+    main section:nth-child(2) .arrow-animated .delay1 {
+      -webkit-animation-delay: 1s;
+      animation-delay: 1s; }
+    main section:nth-child(2) .arrow-animated .delay2 {
+      -webkit-animation-delay: 2s;
+      animation-delay: 2s; }
+    main section:nth-child(2) .arrow-animated .delay3 {
+      -webkit-animation-delay: 3s;
+      animation-delay: 3s; }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateX(15vw); }
+    20% {
+      opacity: 1;
+      transform: translateX(9vw); }
+    80% {
+      opacity: 1;
+      transform: translateX(-9vw); }
+    100% {
+      opacity: 0;
+      transform: translateX(-15vw); } }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateX(15vw); }
+    20% {
+      opacity: 1;
+      transform: translateX(9vw); }
+    80% {
+      opacity: 1;
+      transform: translateX(-9vw); }
+    100% {
+      opacity: 0;
+      transform: translateX(-15vw); } }
+  main section:nth-child(2) img {
+    flex-basis: 50%;
+    width: 45%;
+    margin-top: 0; } }
 @media (min-width: 1280px) {
   main section {
-    padding: 6rem 0; } }
+    padding: 7.5rem 0; }
+    main section:nth-child(2) .content {
+      margin-top: 5rem;
+      margin-left: 5rem; } }
 
 .socials-bar {
   background-color: #f8f8f8;
