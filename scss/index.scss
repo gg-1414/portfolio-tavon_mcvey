@@ -650,6 +650,7 @@ main {
         justify-content: center;
         align-items: flex-start;
         flex: 1.3;
+        transform: scale(.6);
       
         .arrow {
           width: 4rem;
@@ -736,7 +737,7 @@ main {
     padding: .75rem 0;
 
     svg {
-      height: 3rem;
+      height: 2.5rem;
       padding: 0 1rem;
     }
   }
