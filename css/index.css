@@ -65,13 +65,8 @@
 
 /***********************/
 /***********************/
-@font-face {
-  font-family: Montserrat;
-  src: url("../assets/fonts/Montserrat/Montserrat-Regular.ttf"); }
-@font-face {
-  font-family: Montserrat;
-  font-weight: bold;
-  src: url("../assets/fonts/Montserrat/Montserrat-Bold.ttf"); }
+/* Vars */
+/* Helper classes */
 .bg-dark-navy {
   background-color: #212731;
   color: #f8f8f8; }
@@ -92,37 +87,12 @@
   .d-md-none {
     display: none; } }
 
-* {
-  font-family: "Montserrat", sans-serif; }
-
-body {
-  margin: 0; }
-
-h2 {
-  font-weight: normal;
-  font-size: 1.75rem;
-  margin: 0;
-  line-height: 1.3; }
-
-p {
-  font-size: 0.875rem;
-  line-height: 1.5; }
-
-button {
-  outline: none;
-  cursor: pointer; }
-
-ul {
-  list-style: none;
-  padding-left: 0; }
-
 a {
   text-decoration: initial;
   font-weight: bold;
   letter-spacing: 2px;
   position: relative;
   color: #000;
-  text-decoration: none;
   padding-bottom: 6px; }
   a.hover-underline:before {
     content: "";
@@ -139,18 +109,6 @@ a {
     visibility: visible;
     transform: scaleX(1); }
 
-@media (min-width: 768px) {
-  h2 {
-    font-size: 2.5rem; }
-
-  p {
-    font-size: 1.125rem; } }
-@media (min-width: 1280px) {
-  h2 {
-    font-size: 2.5rem; }
-
-  p {
-    font-size: 1.25rem; } }
 .mobile-menu-wrapper {
   height: 100vh;
   z-index: 100;
