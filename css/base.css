@@ -52,7 +52,10 @@ ul {
   padding-left: 0; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 2px; }
 
 @media (min-width: 768px) {
   h2 {
