@@ -1,0 +1,70 @@
+/* Vars */
+/* Helper classes */
+.bg-dark-navy {
+  background-color: #212731;
+  color: #f8f8f8; }
+
+.d-md-block {
+  display: none; }
+  @media (min-width: 1024px) {
+    .d-md-block {
+      display: block; } }
+
+.d-md-flex {
+  display: none; }
+  @media (min-width: 1024px) {
+    .d-md-flex {
+      display: flex; } }
+
+@media (min-width: 1024px) {
+  .d-md-none {
+    display: none; } }
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../assets/fonts/Montserrat/Montserrat-Regular.ttf"); }
+@font-face {
+  font-family: Montserrat;
+  font-weight: bold;
+  src: url("../assets/fonts/Montserrat/Montserrat-Bold.ttf"); }
+* {
+  font-family: "Montserrat", sans-serif; }
+
+body {
+  margin: 0; }
+
+h2 {
+  font-weight: normal;
+  font-size: 1.75rem;
+  margin: 0;
+  line-height: 1.3; }
+
+p {
+  font-size: 0.875rem;
+  line-height: 1.5; }
+
+button {
+  outline: none;
+  cursor: pointer; }
+
+ul {
+  list-style: none;
+  padding-left: 0; }
+
+a {
+  text-decoration: none; }
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.5rem; }
+
+  p {
+    font-size: 1.125rem; } }
+@media (min-width: 1280px) {
+  h2 {
+    font-size: 2.5rem; }
+
+  p {
+    font-size: 1.25rem; } }
+
+/*# sourceMappingURL=base.css.map */
