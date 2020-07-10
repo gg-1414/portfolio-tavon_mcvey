@@ -31,6 +31,8 @@
     
     .hero-content {
       background-color: $dark-navy;
+      background: linear-gradient(to bottom left, $dark-navy 50%, $dark-lime-green 50%);
+      background: linear-gradient(to bottom left, white 50%, $lime-green 50%);
       display: flex;
       width: 50%;
       height: 100%;
@@ -41,7 +43,6 @@
       font-size: 5rem;
       padding: 3rem;
       margin: 0;
-      color: white;
       text-transform: uppercase;
       line-height: 1.1;
       padding-top: 13rem;
@@ -53,6 +54,7 @@
   
       span {
         font-size: 3.5rem;
+        font-style: italic;
       }
     }
   }
@@ -79,16 +81,22 @@ main {
 
   .container {
     padding: 0 1rem;
-    max-width: 60rem;
+    max-width: 48rem;
     margin: auto;
   }
 
   section {
-    padding: 4rem 0; 
+    padding: 4rem 0 0; 
   }
 
   & {
     background-color: white;
+    background: {
+      image: url('../assets/bg-pattern.png');
+      repeat: repeat;
+      size: 28rem;
+    }
+    padding-bottom: 4rem;
   }
 
   @media (min-width: #{$sm}) {
@@ -122,7 +130,7 @@ main {
       h2 {
         flex: 1;
         display: flex;
-        padding-bottom: 5rem;
+        padding-bottom: 1rem;
 
         span {
           align-self: flex-end;
@@ -140,7 +148,7 @@ main {
           width: 4rem;
           height: 4rem;
           border: 7px solid;
-          border-color: white transparent transparent white;
+          border-color: $lime-green transparent transparent $lime-green;
           transform: rotate(-45deg);
         }
       
@@ -187,12 +195,14 @@ main {
   }
 
   @media (min-width: #{$lg}) {
+    padding-bottom: 7.5rem; 
+
     section {
-      padding: 7.5rem 0;
+      padding: 7.5rem 0 0;
 
       &:nth-child(2) {
         .content {
-          margin-top: 5rem;
+          margin-top: 2rem;
           margin-left: 5rem;
         }
       }

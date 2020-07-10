@@ -44,6 +44,8 @@
       max-height: 48rem; }
       .parallax-hero-placeholder .hero-content {
         background-color: #212731;
+        background: linear-gradient(to bottom left, #212731 50%, #afd151 50%);
+        background: linear-gradient(to bottom left, white 50%, #d7ee94 50%);
         display: flex;
         width: 50%;
         height: 100%; }
@@ -52,7 +54,6 @@
         font-size: 5rem;
         padding: 3rem;
         margin: 0;
-        color: white;
         text-transform: uppercase;
         line-height: 1.1;
         padding-top: 13rem;
@@ -62,7 +63,8 @@
         transform: translateY(-50%);
         text-align: center; }
         .parallax-hero-placeholder h1 span {
-          font-size: 3.5rem; } }
+          font-size: 3.5rem;
+          font-style: italic; } }
   @media (min-width: 1280px) {
     .parallax-hero-placeholder {
       min-height: 96vh; }
@@ -77,12 +79,16 @@ main iframe, main img {
   margin-top: 2.5rem; }
 main .container {
   padding: 0 1rem;
-  max-width: 60rem;
+  max-width: 48rem;
   margin: auto; }
 main section {
-  padding: 4rem 0; }
+  padding: 4rem 0 0; }
 main {
-  background-color: white; }
+  background-color: white;
+  background-image: url("../assets/bg-pattern.png");
+  background-repeat: repeat;
+  background-size: 28rem;
+  padding-bottom: 4rem; }
 @media (min-width: 768px) {
   main p {
     margin-top: 2.5rem; }
@@ -102,7 +108,7 @@ main {
   main section:nth-child(2) h2 {
     flex: 1;
     display: flex;
-    padding-bottom: 5rem; }
+    padding-bottom: 1rem; }
     main section:nth-child(2) h2 span {
       align-self: flex-end; }
   main section:nth-child(2) .arrow-animated {
@@ -115,7 +121,7 @@ main {
       width: 4rem;
       height: 4rem;
       border: 7px solid;
-      border-color: white transparent transparent white;
+      border-color: #d7ee94 transparent transparent #d7ee94;
       transform: rotate(-45deg); }
     main section:nth-child(2) .arrow-animated .arrow-sliding {
       position: absolute;
@@ -161,10 +167,12 @@ main {
     width: 45%;
     margin-top: 0; } }
 @media (min-width: 1280px) {
-  main section {
-    padding: 7.5rem 0; }
-    main section:nth-child(2) .content {
-      margin-top: 5rem;
-      margin-left: 5rem; } }
+  main {
+    padding-bottom: 7.5rem; }
+    main section {
+      padding: 7.5rem 0 0; }
+      main section:nth-child(2) .content {
+        margin-top: 2rem;
+        margin-left: 5rem; } }
 
 /*# sourceMappingURL=home.css.map */
