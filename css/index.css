@@ -90,6 +90,12 @@
   transition: opacity .4s;
   will-change: opacity; }
 
+.container {
+  padding: 0 1rem;
+  max-width: 48rem;
+  margin: auto;
+  margin-top: 3rem; }
+
 .mobile-menu-wrapper {
   height: 100vh;
   z-index: 100;
@@ -242,7 +248,7 @@
     min-height: 3.5rem; }
 
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
   background-color: #f8f8f8;
   width: 100%;
@@ -277,7 +283,7 @@ header {
     padding-right: 0; }
     header .hamburger > * {
       pointer-events: none; }
-  header .container {
+  header .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -286,7 +292,7 @@ header {
     header h1 {
       font-size: 1.5rem; } }
   @media (min-width: 1024px) {
-    header .container {
+    header .header-container {
       padding: 2rem 1rem;
       max-width: 1280px;
       margin: 0 auto; }
