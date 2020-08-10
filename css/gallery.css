@@ -20,36 +20,21 @@
   .d-md-none {
     display: none; } }
 
-.grid {
-  display: flexbox;
-  /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap;
-  /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-  /* Create four equal columns that sits next to each other */
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */ }
-  .grid .column {
-    -ms-flex: 25%;
-    /* IE10 */
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px; }
-  .grid .column img {
-    margin-top: 8px;
-    vertical-align: middle;
+.gallery main {
+  margin-top: 70px; }
+  @media (min-width: 1024px) {
+    .gallery main {
+      margin-top: 89px; } }
+  .gallery main .row {
+    display: flex;
+    overflow: hidden; }
+    .gallery main .row > * {
+      flex: 1; }
+  .gallery main .column {
+    width: 100%;
+    display: inline-block; }
+  .gallery main img {
+    /* Just in case there are inline attributes */
     width: 100%; }
-  @media screen and (max-width: 800px) {
-    .grid .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%; } }
-  @media screen and (max-width: 600px) {
-    .grid .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%; } }
 
 /*# sourceMappingURL=gallery.css.map */
